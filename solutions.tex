@@ -1,0 +1,44 @@
+\documentclass[a4paper,11pt]{memoir}
+\usepackage[affil-it]{authblk}
+\usepackage{amsmath,amssymb,amsthm,fancyhdr,enumitem,%
+microtype,pgfplots,tikz,enumerate}
+\usepackage[colorlinks=true,linkcolor=red,urlcolor=red,%
+citecolor=red,anchorcolor=red]{hyperref}
+\pgfplotsset{width=7cm,compat=1.9}
+\usepackage[retainorgcmds]{IEEEtrantools}
+\newcommand{\note}[1]{\emph{#1}}
+\newcommand{\boldText}[1]{\textbf{#1}}
+\theoremstyle{plain} \newtheorem{id}{Lemma}[chapter]
+                     \newtheorem{thm}{Theorem}[chapter]
+\theoremstyle{definition} \newtheorem{pr}{Problem}[chapter]
+\theoremstyle{remark}     \newtheorem{ab}{Remark}[chapter]
+\newcommand{\idautorefname}{Lemma}
+\newcommand{\abautorefname}{Remark}
+\newcommand{\thmautorefname}{Theorem}
+\newcommand{\prautorefname}{Problem}
+\newenvironment{solution}%
+{\renewcommand{\qedsymbol}{$\blacksquare$}%
+\begin{proof}[Solution]}%
+{\end{proof}}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LO,RE]{\textsl{\leftmark}}
+\fancyhead[RO,LE]{Page \thepage\ of \thelastpage}
+\fancyfoot[CE]{Son To}
+\fancyfoot[CO]{\textsl{Problems In Mathematics for Computer Science}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\begin{document}
+    
+    \title{Problems In Mathematics for Computer Science}
+    \author{Son To\\
+    $<$\href{mailto:son.trung.to@gmail.com}%
+    {son.trung.to@gmail.com}$>$}
+    \affil{Leadoo Marketing Technology}
+    \date{$22^{nd}$ May, $2021$}
+
+    \maketitle
+    \makeatletter
+
+\end{document}
