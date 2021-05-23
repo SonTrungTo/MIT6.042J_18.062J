@@ -11,7 +11,9 @@ citecolor=red,anchorcolor=red]{hyperref}
 \newcommand{\boldText}[1]{\textbf{#1}}
 \theoremstyle{plain} \newtheorem{id}{Lemma}[chapter]
                      \newtheorem{thm}{Theorem}[chapter]
+                     \newtheorem{claim}{Claim}[section]
 \theoremstyle{definition} \newtheorem{pr}{Problem}[chapter]
+                          \newtheorem{definition}{Definition}[chapter]
 \theoremstyle{remark}     \newtheorem{ab}{Remark}[chapter]
 \newcommand{\idautorefname}{Lemma}
 \newcommand{\abautorefname}{Remark}
@@ -36,7 +38,7 @@ citecolor=red,anchorcolor=red]{hyperref}
     \author{Son To\\
     $<$\href{mailto:son.trung.to@gmail.com}%
     {son.trung.to@gmail.com}$>$}
-    \affil{Leadoo Marketing Technology}
+    \affil{Leadoo Marketing Technologies}
     \date{$22^{nd}$ May, $2021$}
 
     \maketitle
@@ -76,6 +78,8 @@ citecolor=red,anchorcolor=red]{hyperref}
     }
     \newcommand{\partnote}{}
     \newcommand{\doublenote}{}
+    \@addtoreset{chapter}{part}
+    \makeatother
     \frontmatter
         \chapter{Preface}
             This is a research project in which I try to read
@@ -86,6 +90,9 @@ citecolor=red,anchorcolor=red]{hyperref}
 
     \mainmatter
     \part{Notes}
+        \input{notes/ch1.tex}
+    \part{Problems and Exercises}
+        \input{problems/ch1.tex}
 
     \bibliographystyle{plain}
     \bibliography{reference}
