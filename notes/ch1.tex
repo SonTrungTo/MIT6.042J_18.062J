@@ -49,3 +49,68 @@ the value of $n$.
     \item \note{Corollary} 
 \end{itemize}
 $\Rightarrow$ Axiomatic Method
+
+\section{Our axioms}
+\subsection{Logical deductions}
+Keywords: \note{
+    Logical deductions(inference rules), antecedents, conclusion, modus ponens
+}
+\subsection{Patterns of Proof}
+Many proofs follow specific templates\ldots Many special techniques later on.
+
+\section{Proving an Implication}
+\begin{definition}
+    \note{Implications} means $P \Rightarrow Q$
+\end{definition}
+\subsection{Method \#1: \texorpdfstring{$P \Rightarrow Q$}{TEXT}}
+\subsection{Method \#2: Contrapositive: \texorpdfstring{$\neg Q \Rightarrow \neg P$}{TEXT}}
+
+\section{Proving an ``if and only if''}
+\subsection{Method \#1: Prove each statement implies the other}
+\subsection{Method \#2: Construct a chain of iffs}
+
+\section{Proof by Cases}
+Amusing theorem
+\begin{thm}
+    Every collection of 6 people includes a club of 3 people or a group of 3 strangers.
+\end{thm}
+\begin{proof}
+    The proof is by case analysis. Let $x$ be one of those $6$ people. Among $5$ other people,
+    there are two scenarios:
+    \begin{enumerate}
+        \item At least $3$ people have met $x$
+        \item At least $3$ people have not met $x$
+    \end{enumerate}
+    We argue that these two cases are exhaustive since we are dividing the 5 people
+    into two groups: those who have met $x$ and those who have not.
+    \begin{casesp}
+        \item \label{Case1:sec1.7:ch1} Suppose that at least $3$ people have met $x$
+        
+        This is divided further more into two subcases:
+
+        \begin{casesp}
+            \item No pairs among those people have met each other. In this case,
+            they form a group of at least $3$ strangers. Thus, the theorem holds in this
+            subcase.
+            \item At least one pair in those people have met. Adding $x$ to such pair
+            forms a club of at least $3$ people. The theorem is proved in this subcase.
+        \end{casesp}
+
+        This implies that the theorem holds for Case \ref{Case1:sec1.7:ch1}.
+
+        \item \label{Case2:sec1.7:ch1} Suppose that at least $3$ people have not met $x$
+        
+        This again splits the case into two subcases:
+
+        \begin{casesp}
+            \item All pairs among those people have met each other. In this case,
+            they form a club of at least $3$ people. Thus the theorem holds in this subcase.
+            \item At least one pair in those people have not met. Adding $x$ to
+            such pair forms a group of at least $3$ strangers. The theorem holds in this subcase.
+        \end{casesp}
+
+        This implies that the theorem holds for Case \ref{Case2:sec1.7:ch1}.
+
+    \end{casesp}
+    We have proved the theorem.
+\end{proof}

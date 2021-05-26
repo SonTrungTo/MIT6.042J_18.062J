@@ -10,7 +10,7 @@ citecolor=red,anchorcolor=red]{hyperref}
 \newcommand{\note}[1]{\emph{#1}}
 \newcommand{\boldText}[1]{\textbf{#1}}
 \theoremstyle{plain} \newtheorem{id}{Lemma}[chapter]
-                     \newtheorem{thm}{Theorem}[chapter]
+                     \newtheorem{thm}{Theorem}[section]
                      \newtheorem{claim}{Claim}[section]
 \theoremstyle{definition} \newtheorem{pr}{Problem}[chapter]
                           \newtheorem{definition}{Definition}[chapter]
@@ -31,6 +31,23 @@ citecolor=red,anchorcolor=red]{hyperref}
 \fancyfoot[CO]{\textsl{Problems In Mathematics for Computer Science}}
 \renewcommand{\headrulewidth}{0.4pt}
 \renewcommand{\footrulewidth}{0.4pt}
+\setsecnumdepth{subsection}
+\maxtocdepth{subsection}
+\newlist{casesp}{enumerate}{3} %% Case separation based on enumerate with depth level of 3
+%% Next is setting up parameters for this new list
+\setlist[casesp]{
+    align=left, %% alignment of labels
+    listparindent=\parindent, %% same indentation as in normal text
+    parsep=\parskip, %% same as in normal paragraph skip
+    font=\normalfont\bfseries, %% used for naming case
+    leftmargin=0pt, %% total amount by which text is indented
+    labelwidth=0pt, %% width of labels (= how much the name stick out on the left because of align=left)
+    itemindent=.4em, labelsep=.4em,
+    partopsep=0pt
+}
+\setlist[casesp,1]{label=Case~\arabic*:,ref=\arabic*,wide=\parindent}
+\setlist[casesp,2]{label=Case~\thecasespi.\arabic*:,ref=\thecasespi.\arabic*,leftmargin=4em }
+\setlist[casesp,3]{label=Case~\thecasespii.\arabic*:,ref=\thecasespii.\arabic*}
 
 \begin{document}
     
