@@ -114,3 +114,16 @@ Amusing theorem
     \end{casesp}
     We have proved the theorem.
 \end{proof}
+
+\section{Proof by Contradiction}
+\begin{thm}
+    $\sqrt{2}$ is irrational
+\end{thm}
+\begin{proof}
+    We use proof by contradiction. Suppose $\sqrt{2}$ is rational, then $\sqrt{2}=\dfrac{p}{q}$,
+    where $p$ and $q$ are integers that have no common factors. Then $2=\dfrac{p^2}{q^2}$,
+    which means $p^2=2q^2$. Since $p^2$ is even, $p$ must be even (easily proved by contradiction again).
+    W.l.o.g, assume $p=2k$ for some integer $k$. Then $4k^2=2q^2 \Rightarrow q^2=2k^2$, which
+    implies that $q$ is also even. However, this contradicts the fact that $p$
+    and $q$ have no common factors. Therefore $\sqrt{2}$ is irrational.
+\end{proof}
