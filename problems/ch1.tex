@@ -46,6 +46,78 @@
         \item Some assumptions about right triangles, squares and lines are,
         \begin{itemize}
             \item 4 identical right triangles.
+            \item For every 2 points, there is a line.
         \end{itemize}
+    \end{enumerate}
+\end{pr}
+
+\begin{pr}\leavevmode
+    \begin{enumerate}[label=\textbf{(\alph*)}]
+        \item Mistake:
+        \begin{equation*}
+            \sqrt{(-1)(-1)} = \sqrt{-1}\sqrt{-1}
+        \end{equation*}
+        The right-hand side of this equation is undefined while the left-hand side
+        is defined.
+        \item Suppose $1 = -1$, then
+        \begin{IEEEeqnarray*}{C'rCl}
+                        & 0     & = & 0 \\
+            \Rightarrow & 1^2 - 1^2 & = & 1 + 1 \\
+            \Rightarrow & (1 - 1)(1 + 1) & = & 1 + 1
+        \end{IEEEeqnarray*}
+        At this stage, we cancel off $1 + 1$ on each side since they are non-zero, the equation
+        then becomes,
+        \begin{IEEEeqnarray*}{C'rCl}
+            \Rightarrow & 1 - 1 & = & 1 \\
+            \Rightarrow & 1 + 1 & = & 1 \\
+            \Rightarrow & 2 & = & 1
+        \end{IEEEeqnarray*}
+        where the second equation is by the antecedent $1 = -1$. Hence, we have
+        proved $2 = 1$.
+        \item We shall prove the following lemma,
+        \begin{lemPr}
+            If $r,s > 0$, then $\sqrt{rs} = \sqrt{r}\sqrt{s}$
+        \end{lemPr}
+        \begin{proof}
+            Assume $r,s > 0$. For every positive integer $x$, there is one $\sqrt{x} > 0$
+            such that $x = (\sqrt{x})^2$; therefore,
+            \begin{equation}
+                (\sqrt{r})^2(\sqrt{s})^2 = rs
+            \end{equation}
+            By commutative and associative property of multiplication, 
+            \begin{equation}
+                (\sqrt{r})^2(\sqrt{s})^2 = (\sqrt{r}\sqrt{s})^2
+            \end{equation}
+            which leads to
+            \begin{equation}
+                (\sqrt{r}\sqrt{s})^2 = rs
+            \end{equation}
+            Since $rs > 0$, there is also one $\sqrt{rs} > 0$ such that
+            $(\sqrt{rs})^2 = rs$. Therefore,
+            \begin{equation}
+                (\sqrt{r}\sqrt{s})^2 = (\sqrt{rs})^2
+            \end{equation}
+            Since $\sqrt{r}\sqrt{s} > 0$ and $\sqrt{rs} > 0$,
+            we conclude
+            \begin{equation}
+                \sqrt{r}\sqrt{s} = \sqrt{rs}
+            \end{equation}
+        \end{proof}
+    \end{enumerate}
+\end{pr}
+
+\begin{pr}\leavevmode
+    \begin{enumerate}[label=\textbf{(\alph*)}]
+        \item Mistake,
+        \begin{IEEEeqnarray*}{rCl}
+            3                & > & 2 \\
+            3\log_{10} (1/2) & > & 2\log_{10} (1/2)
+        \end{IEEEeqnarray*}
+        since $\log_{10} n \;\forall  0 < n < 1$ is always negative.
+        \item Wrong because all arithmetic operations must be done
+        on numbers with the same currency, so that they will be in the
+        same field.
+        \item Since $a = b$, $a - b = 0$, and therefore we cannot
+        cancel $a - b$ on both sides since we cannot divide each side by $0$.
     \end{enumerate}
 \end{pr}
