@@ -121,3 +121,27 @@
         cancel $a - b$ on both sides since we cannot divide each side by $0$.
     \end{enumerate}
 \end{pr}
+
+\begin{pr}
+    The questionable step is from step 2 to step 3, namely,
+    \begin{IEEEeqnarray*}{rCl}
+        a + b & \overset{?}{\geq} & 2\sqrt{ab} \\
+        a^2 + 2ab + b^2 & \overset{?}{\geq} & 4ab
+    \end{IEEEeqnarray*}
+
+    Assume that $a, b < 0$. Then even though the first inequality
+    is false, the second inequality is true, which will lead to all
+    subsequent inequalities to be true. Therefore, we have just ``proved''
+    that arithmetic mean is at least as large as geometric mean for
+    all negative numbers $a, b$!
+
+    To fix this,
+    \begin{IEEEeqnarray*}{rCl}
+        \dfrac{a + b}{2} & \geq & \sqrt{ab} \\
+        a + b - 2\sqrt{ab} & \geq & 0 \\
+        (\sqrt{a} - \sqrt{b})^2 & \geq & 0 \\
+    \end{IEEEeqnarray*}
+
+    This ensures that $a, b \geq 0$ for the last inequality
+    to be defined.
+\end{pr}
