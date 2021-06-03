@@ -167,3 +167,45 @@
     his quiz on next week. This collapses the chain of arguments
     and therefore the reasoning is false.
 \end{pr}
+
+\begin{pr}\leavevmode
+    \\
+    We prove by case analysis. Let $x = \log_{7} n \;\forall n \in \mathbb{Z}^{+}$
+    so that $7^x = n$.
+    We argue that there are two scenarios,
+    \begin{enumerate}
+        \item $x$ is an integer
+        \item $x$ is a non-integer
+    \end{enumerate}
+    These cases are clearly exhaustive.
+    \begin{casesp}
+        \item $x$ is an integer
+        
+        We use a certain fact called the fundamental theorem of algebra,
+
+        \begin{factPr}
+            All positive integers are products of unique primes.
+        \end{factPr}
+
+        Therefore, for all $n$ that are a factor of $7$ (e.g, 7, 49, 343, \ldots),
+        $x$ is an integer.
+        
+        \item $x$ is a non-integer
+        
+        We prove by contradiction. Assume $x$ is rational, then $x = \dfrac{p}{q}$
+        for all integers $p,q \in \mathbb{Z}^{+}$ that do not share common factor such that $7^{\frac{p}{q}} = n$.
+        Then $n^q = 7^p$, which means that $n^q$ is divisible by 7. We know a fact,
+
+        \begin{factPr}
+            If $n^q$ is divisible by 7, then $n$ is also divisible by 7.
+        \end{factPr}
+
+        This fact is easily proved by contradiction. But then $n = 7k$ for some
+        positive integer $k$, which means that $k^q = 7^{p - q}$. W.l.o.g,
+        suppose $p > q$, we can reapply the above fact until $q$ is large enough
+        so that eventually the left-hand side is a product of some positive integer $k$ while
+        the right-hand side is $7^s$ such that $s \in \mathbb{Z}^{-}$, which
+        is a rational number, which is false. Therefore, we conclude that
+        $x$ is an irrational number.
+    \end{casesp}
+\end{pr}
