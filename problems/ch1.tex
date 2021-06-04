@@ -218,5 +218,59 @@
 
 \begin{pr}\leavevmode
     \\
-    Prove by case
+    We claim that,
+
+    \begin{claimPr}
+        An irrational number powered to an irrational number can be rational.
+    \end{claimPr}
+
+    We prove by case analysis. Let's consider $\sqrt{2}^{\sqrt{2}}$ to be one of the two cases,
+
+    \begin{enumerate}
+        \item $\sqrt{2}^{\sqrt{2}}$ is rational
+        \item $\sqrt{2}^{\sqrt{2}}$ is irrational
+    \end{enumerate}
+
+    In case 1, we have the conclusion. In case 2, suppose $x = \sqrt{2}^{\sqrt{2}}$
+    and $y = \sqrt{2}$, then
+
+    \begin{equation*}
+        x^y = \sqrt{2}^{(\sqrt{2})^2} = (\sqrt{2})^2 = 2
+    \end{equation*}
+
+    Therefore, we conclude that an irrational number powered to an irrational number
+    can be rational.
+\end{pr}
+
+\begin{pr}\leavevmode
+    \\
+    We prove $|r + s| \leq |r| + |s| \;\forall r,s \in \mathbb{R}$ by case analysis.
+    \begin{casesp}
+        \item $r > 0$, $s > 0$
+        \begin{equation*}
+            (r + s) = r + s
+        \end{equation*}
+        \item $r > 0$, $s < 0$
+        \begin{equation*}
+            |r + s| \leq r - s
+        \end{equation*}
+        There are two subcases in this one,
+        \begin{casesp}
+            \item $r + s \geq 0$
+            \begin{equation*}
+                r + s < r - s
+            \end{equation*}
+            \item $r + s < 0$
+            \begin{equation*}
+                -r - s < r - s
+            \end{equation*}
+        \end{casesp}
+        \item $r < 0$, $s > 0$
+
+        Very similar to the case above, interchange the role of $r, s$.
+        
+        \item $r < 0$, $s < 0$
+        
+        Then $-(r + s) = -r - s = (-r) + (-s)$.
+    \end{casesp}
 \end{pr}
