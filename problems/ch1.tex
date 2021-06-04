@@ -183,29 +183,40 @@
         
         We use a certain fact called the fundamental theorem of algebra,
 
-        \begin{factPr}
+        \begin{factPr} \label{fact1:sec1.6:ch1}
             All positive integers are products of unique primes.
         \end{factPr}
 
-        Therefore, for all $n$ that are a factor of $7$ (e.g, 7, 49, 343, \ldots),
+        Therefore, for all $n$ that are a product of $7s$ (e.g, $7$, $7^2$, $7^3$, \ldots),
         $x$ is an integer.
         
         \item $x$ is a non-integer
         
         We prove by contradiction. Assume $x$ is rational, then $x = \dfrac{p}{q}$
         for all integers $p,q \in \mathbb{Z}^{+}$ that do not share common factor such that $7^{\frac{p}{q}} = n$.
-        Then $n^q = 7^p$, which means that $n^q$ is divisible by 7. We know a fact,
-
-        \begin{factPr}
-            If $n^q$ is divisible by 7, then $n$ is also divisible by 7.
-        \end{factPr}
-
-        This fact is easily proved by contradiction. But then $n = 7k$ for some
-        positive integer $k$, which means that $k^q = 7^{p - q}$. W.l.o.g,
-        suppose $p > q$, we can reapply the above fact until $q$ is large enough
-        so that eventually the left-hand side is a product of some positive integer $k$ while
-        the right-hand side is $7^s$ such that $s \in \mathbb{Z}^{-}$, which
-        is a rational number, which is false. Therefore, we conclude that
-        $x$ is an irrational number.
+        Then $n^q = 7^p$. By fact \ref{fact1:sec1.6:ch1}, $n = 7^k$ for some positive integer $k$,
+        which means $7^{qk} = 7^p$. Then $\dfrac{p}{q} = k$, which contradicts the fact $p$
+        and $q$ do not share a common factor. We conclude that $x$ is irrational.
     \end{casesp}
+\end{pr}
+
+\begin{pr}\leavevmode
+    \begin{casesp}
+        \item $r \geq s$
+        
+        \begin{equation*}
+            max(r,s) + min(r,s) = r + s
+        \end{equation*}
+
+        \item $r < s$
+        
+        \begin{equation*}
+            max(r,s) + min(r,s) = s + r = r + s
+        \end{equation*}
+    \end{casesp}
+\end{pr}
+
+\begin{pr}\leavevmode
+    \\
+    Prove by case
 \end{pr}
