@@ -274,3 +274,35 @@
         Then $-(r + s) = -r - s = (-r) + (-s)$.
     \end{casesp}
 \end{pr}
+
+\begin{pr}\leavevmode
+    \begin{enumerate}[label=\textbf{(\alph*)}]
+        \item We prove by case analysis. Suppose that $d$ is even. We will now
+        construct a chain of IFFs. Without loss of generality, assume $z = a + b$
+        and $d = z + c$ where $a,b,c,d \in \mathbb{Z}^{+}$, then $d$ is even IFF
+        one of the following two cases happens,
+
+        \begin{casesp}
+            \item $z$ is odd and $c$ is odd
+            
+            $z$ is odd IFF one and only one of the summands is even and the other is odd.
+            Therefore, $d$ is even IFF one and only one of $a,b,c$ is even.
+
+            \item $z$ is even and $c$ is even
+            
+            For $z$ to be even, there are two sub-cases,
+
+            \begin{casesp}
+                \item Both $a$ and $b$ are evens
+                
+                $d$ is even IFF all $a,b,c$ are evens.
+                \item Both $a$ and $b$ are odds
+                
+                $d$ is even IFF one and only one of $a,b,c$ is even.
+            \end{casesp}
+        \end{casesp}
+
+        We conclude that $d$ is even IFF either one and only one of $a,b,c$
+        is even or all $a,b,c$ are evens.
+    \end{enumerate}
+\end{pr}
