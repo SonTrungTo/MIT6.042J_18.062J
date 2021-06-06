@@ -401,3 +401,51 @@
         is rational.
     \end{proof}
 \end{pr}
+
+\begin{pr}
+    The proof is by contradiction. Suppose $a$ is odd, then $a = 2k + 1$ for some
+    integer $k$, then for all $n > 0$,
+    \begin{equation*}
+        a^n = (2k + 1)^n = \sum_{i=1}^n \text{C}^n_i (2k)^i + 1 
+        = 2\left(\sum_{i=1}^n \text{C}^n_i 2^{i - 1}k^i\right) + 1
+    \end{equation*}
+
+    Therefore, $a^n$ is odd, a contradiction. We conclude that if $a^n$ is even,
+    $a$ is even.
+\end{pr}
+
+\begin{pr}
+    Assume by contradiction that both $a$ and $b$ $> \sqrt{n}$. Then, since $a, b \geq 0$,
+    \begin{equation*}
+        a \cdot b > \sqrt{n} \cdot \sqrt{n} = n
+    \end{equation*}
+    which contradicts the antecedent $a \cdot b = n$.
+\end{pr}
+
+\begin{pr}\leavevmode
+    \begin{enumerate}[label=\textbf{(\alph*)}]
+        \item Suppose by contradiction $n = 2k + 1$ for some integer $k$,
+        then $n^2 = 4(k^2 + k) + 1$ is odd. Therefore, $n$ must be even.
+        \item Suppose by contradiction either $n = 3l + 1$
+        or $n = 3l + 2$ for some integer $l$,
+        then either $n^2 = 3(3l^2 + 2l) + 1$ or $n^2 = 3(3l^2 + 2l + 1) + 1$,
+        contradicting the antecedent $n^2$ is a multiple of $3$. Therefore,
+        $n$ must be a multiple of $3$.
+    \end{enumerate}
+\end{pr}
+
+\begin{pr}
+    Let $n = 4$ and $m = 8$. Then $16 = 4^2$ is a multiple of $8$, but $4$ is not
+    a multiple of $8$. If $m < n$, $n = mk + l$ for some integer $k$ and $l < m$, and
+    we will prove that if $n^2$ is a multiple of $m$, then $n$ is a multiple of $m$.
+    \begin{proof}
+        We will prove by contradiction. Suppose $n = mk + l$ for some positive integer $k$
+        and $m < n$ and $l < m$, then $n^2 = m(mk^2 + 2kl) + l^2 < 2m(mk^2 + 2kl)$.
+        Therefore, $n^2$ is not a multiple of $m$, a contradiction.
+    \end{proof}
+\end{pr}
+
+\begin{pr}\leavevmode
+    \\
+    We can generalize
+\end{pr}
