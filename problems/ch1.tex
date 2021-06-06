@@ -426,7 +426,7 @@
     \begin{enumerate}[label=\textbf{(\alph*)}]
         \item Suppose by contradiction $n = 2k + 1$ for some integer $k$,
         then $n^2 = 4(k^2 + k) + 1$ is odd. Therefore, $n$ must be even.
-        \item Suppose by contradiction either $n = 3l + 1$
+        \item \label{3b:sec1.8:ch1} Suppose by contradiction either $n = 3l + 1$
         or $n = 3l + 2$ for some integer $l$,
         then either $n^2 = 3(3l^2 + 2l) + 1$ or $n^2 = 3(3l^2 + 2l + 1) + 1$,
         contradicting the antecedent $n^2$ is a multiple of $3$. Therefore,
@@ -447,5 +447,45 @@
 
 \begin{pr}\leavevmode
     \\
-    We can generalize
+    We can generalize the proof to only for some nonnegative integer $n$. For example,
+    $\sqrt{4} = 2$ is rational. $\sqrt{3}$, however, is irrational. Using 
+    Problem 1.14 \ref{3b:sec1.8:ch1}, we can easily prove such statement.
+\end{pr}
+
+\begin{pr}\leavevmode
+    \\
+    We shall prove by contradiction. Let $\log_4 6 = \dfrac{m}{n}$ for some integer
+    $m,n$ in its simpliest form such that $4^{\frac{m}{n}} = 6$. Then
+    \begin{equation*}
+        2^{2\frac{m}{n}} = (2 \cdot 3)
+    \end{equation*}
+    Powering to $n$ on both sides, we have,
+    \begin{equation*}
+        2^{2m} = (2 \cdot 3)^n
+    \end{equation*}
+    Dividing both sides by $2^n$, we have,
+    \begin{equation*}
+        2^{2m - n} = 3^n
+    \end{equation*}
+    By unique factorization of primes, this cannot happen unless both $2m - n = 0$
+    and $n = 0$, but this implies that $m = n = 0$. Hence, this is a contradiction.
+
+    We conclude that $\log_4 6$ is irrational.
+\end{pr}
+
+\begin{pr}\leavevmode
+    \\
+    We shall prove by contradiction. Note that,
+    \begin{equation*}
+        (\sqrt{3} + \sqrt{2})(\sqrt{3} - \sqrt{2}) = 3 - 2 = 1
+    \end{equation*}
+    Therefore, $\sqrt{3} + \sqrt{2}$ is rational/irrational IFF $\sqrt{3} - \sqrt{2}$
+    is rational/irrational since $\sqrt{3} + \sqrt{2} = \dfrac{1}{\sqrt{3} - \sqrt{2}}$.
+    Suppose $\sqrt{3} + \sqrt{2}$ is rational, then $\sqrt{3} - \sqrt{2}$ is also rational,
+    but then,
+    \begin{equation*}
+        (\sqrt{3} + \sqrt{2}) + (\sqrt{3} - \sqrt{2}) = 2\sqrt{3}
+    \end{equation*}
+    Since we know that $2\sqrt{3}$ is irrational, this is a contradiction.
+    Therefore, $\sqrt{3} + \sqrt{2}$ is irrational.
 \end{pr}
