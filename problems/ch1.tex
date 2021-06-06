@@ -277,16 +277,15 @@
 
 \begin{pr}\leavevmode
     \begin{enumerate}[label=\textbf{(\alph*)}]
-        \item We prove by case analysis. Suppose that $d$ is even. We will now
-        construct a chain of IFFs. Without loss of generality, assume $z = a + b$
-        and $d = z + c$ where $a,b,c,d \in \mathbb{Z}^{+}$, then $d$ is even IFF
-        one of the following two cases happens,
+        \item We prove by case analysis. Without loss of generality, assume $z = a + b$
+        and $d = z + c$ where $a,b,c,d \in \mathbb{Z}^{+}$, then
+        one of the following four cases happens,
 
         \begin{casesp}
             \item $z$ is odd and $c$ is odd
             
             $z$ is odd IFF one and only one of the summands is even and the other is odd.
-            Therefore, $d$ is even IFF one and only one of $a,b,c$ is even.
+            In this case, $d$ is even if one of $a,b,c$ is even.
 
             \item $z$ is even and $c$ is even
             
@@ -295,11 +294,19 @@
             \begin{casesp}
                 \item Both $a$ and $b$ are evens
                 
-                $d$ is even IFF all $a,b,c$ are evens.
+                $d$ is even if all of $a,b,c$ are even.
                 \item Both $a$ and $b$ are odds
                 
-                $d$ is even IFF one and only one of $a,b,c$ is even.
+                $d$ is even if one and only one of $a,b,c$ is even.
             \end{casesp}
+
+            \item $z$ is even and $c$ is odd
+            
+            $d$ is odd in this case.
+
+            \item $z$ is odd and $c$ is even
+            
+            $d$ is also odd in this case.
         \end{casesp}
 
         We conclude that $d$ is even IFF either one and only one of $a,b,c$
@@ -326,7 +333,71 @@
             $z$ is even IFF all $w,x,y$ are even.
         \end{theoPr}
         \begin{proof}
-            We shall prove by case analysis. Assume 
+            We shall prove by case analysis. Assume if $w,x,y$ are even, then
+            $w = 2i, x = 2j, y = 2k$ for some integer $i, j, k$; if $w,x,y$
+            are odd, then $w = 2m + 1, x = 2n + 1, y = 2l + 1$ for some integer
+            $m, n, l$. Then one of the following four cases happen,
+
+            \begin{casesp}
+                \item All $w,x,y$ are odd
+                \begin{IEEEeqnarray*}{rCl}
+                    z^2 & = & (2m + 1)^2 + (2n + 1)^2 + (2l + 1)^2 \\
+                    & = & 4(m^2 + n^2 + l^2 + m + n + l) + 3
+                \end{IEEEeqnarray*}
+
+                \item One of $w,x,y$ is even
+                \begin{IEEEeqnarray*}{rCl}
+                    z^2 & = & (2i)^2 + (2n + 1)^2 + (2l + 1)^2 \\
+                        & = & 4(i^2 + n^2 + l^2 + n + l) + 2
+                \end{IEEEeqnarray*}
+
+                \item Two of $w,x,y$ are even
+                \begin{IEEEeqnarray*}{rCl}
+                    z^2 & = & (2i)^2 + (2j)^2 + (2l + 1)^2 \\
+                        & = & 4(i^2 + j^2 + l^2 + l) + 1
+                \end{IEEEeqnarray*}
+
+                \item All of $w,x,y$ are even
+                \begin{IEEEeqnarray*}{rCl}
+                    z^2 & = & (2i)^2 + (2j)^2 + (2k)^2 \\
+                        & = & 4(i^2 + j^2 + k^2)
+                \end{IEEEeqnarray*}
+            \end{casesp}
+
+            Therefore, if either one and only one of $w,x,y$ is even or all of $w,x,y$
+            are even, then $z^2$ is even, which implies $z$ is even. Conversely,
+            if $z$ is even, by the above lemma, $z^2$ does not exist in Case 2.
+            We conclude that $z$ is even IFF all of $w,x,y$ are even.
         \end{proof}
     \end{enumerate}
+\end{pr}
+
+\begin{pr}\leavevmode
+    \\
+    We want to prove the theorem,
+    \begin{theoPr}
+        There exists an irrational number $a$ such that $a^{\sqrt{3}}$ is rational.
+    \end{theoPr}
+    \begin{proof}
+        We prove by case analysis. The number $x = \sqrt[3]{2}^{\sqrt{3}}$ must be one of
+        the two cases,
+        \begin{casesp}
+            \item $x$ is rational.
+            
+            In this case, $a = \sqrt[3]{2}$ and $a$ is irrational.
+
+            \item $x$ is irrational.
+            
+            Let $a = \sqrt[3]{2}^{\sqrt{3}}$. Then $a$ is irrational such that,
+
+            \begin{IEEEeqnarray*}{rCl}
+                a^{\sqrt{3}} & = & (\sqrt[3]{2})^{(\sqrt{3})^2} \\
+                             & = & (\sqrt[3]{2})^3 \\
+                             & = & 2 
+            \end{IEEEeqnarray*}
+        \end{casesp}
+
+        We conclude that there exists an irrational $a$ such that $a^{\sqrt{3}}$
+        is rational.
+    \end{proof}
 \end{pr}
