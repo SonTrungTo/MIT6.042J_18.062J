@@ -489,3 +489,34 @@
     Since we know that $2\sqrt{3}$ is irrational, this is a contradiction.
     Therefore, $\sqrt{3} + \sqrt{2}$ is irrational.
 \end{pr}
+
+\begin{pr}\leavevmode
+    \\
+    Let us first re-state the lemma,
+    \begin{lemPr}
+        Let the coefficients of the polynomial
+        \begin{equation*}
+            a_0 + a_1x + a_2x^2 + \ldots + a_{m - 1}x^{m - 1} + x^m
+        \end{equation*}
+        be integers. Then any real root of the polynomial is either integer or irrational.
+    \end{lemPr}
+    \begin{enumerate}[label=\textbf{(\alph*)}]
+        \item Let $\sqrt[m]{k} = x_0$, where $x_0$ is a real root of the polynomial.
+        Suppose $\sqrt[m]{k}$ is rational, then by the lemma, $x_0$ must be an integer,
+        which implies that $k = x_0^m$. Therefore, $\sqrt[m]{k}$ is irrational
+        whenever $k \neq x_0^m$ for some integer $x_0$.
+        \item We shall first prove a lemma,
+        \begin{lemPr}
+            If a prime $p$ is a factor of some power of an integer, then it is also
+            a factor of that integer.
+        \end{lemPr}
+        \begin{proof}
+            We prove by contradiction. Suppose $p$ is not a factor of some integer,
+            by unique prime factorization, it cannot be a factor of some power of that
+            integer as well. We conclude that the lemma must hold.
+        \end{proof}
+        We shall prove the first lemma in this problem by direct proof. Suppose the real root
+        of the polynomial is $x_0$. Then $x_0$ is either rational or irrational. Let $x_0 = \dfrac{r}{s}$
+        for some integer $r,s$
+    \end{enumerate}
+\end{pr}
