@@ -1,4 +1,12 @@
 \chapter{What is a Proof?}
+
+There are many problems in this chapter in which we will use this specific Lemma.
+So we state it here for convenience.
+
+\begin{lemNotes}[Unique prime factorization/Fundamental Theorem of Algebra]
+    Every natural number can be expressed as a unique product of primes.
+\end{lemNotes}
+
 \begin{pr}\leavevmode
     \begin{enumerate}[label=\textbf{(\alph*)}]
         \item \label{1.a.sec1} Colors of the triangles are arbitrary since I
@@ -517,6 +525,20 @@
         \end{proof}
         We shall prove the first lemma in this problem by direct proof. Suppose the real root
         of the polynomial is $x_0$. Then $x_0$ is either rational or irrational. Let $x_0 = \dfrac{r}{s}$
-        for some integer $r,s$
+        for some integer $r,s$ in the lowest term possible. Hence,
+        \begin{IEEEeqnarray*}{rCl}
+            a_0 + a_1\left(\frac{r}{s}\right) + a_2\left(\frac{r}{s}\right)^2 + \ldots
+            + a_{m - 1}\left(\frac{r}{s}\right)^{m - 1} + \left(\frac{r}{s}\right)^m & = & 0 \\
+            a_0s^m + a_1rs^{m - 1} + a_2r^2s^{m - 2} + \ldots
+            + a_{m - 1}r^{m - 1}s & = & -r^m \\
+            s(a_0s^{m - 1} + a_1rs^{m - 2} + a_2r^2s^{m - 3} + \ldots
+            + a_{m - 1}r^{m - 1}) & = & -r^m
+        \end{IEEEeqnarray*}
+        By unique prime factorization, $s = pk$ where $p$ is a prime and $k$ is some
+        integer. This implies $r^m$ is divisible by $p$. By the lemma proved above,
+        this means $r$ is also divisible by $p$. But this contradicts that $r$ and $s$
+        are in its simpliest form. Therefore, it must be the case that $s = \pm 1$ or 
+        $x_0$ is irrational. We conclude that any real root of the polynomial is
+        either integer or irrational.
     \end{enumerate}
 \end{pr}
