@@ -602,6 +602,45 @@ So we state it here for convenience.
 \end{pr}
 
 \begin{pr}\leavevmode
-    \\
-    MIT sucks
+    \begin{enumerate}[label=\textbf{(\alph*)}]
+        \item The proof relies first on the fact that $1 < \sqrt{2} < 2$. This is
+        because $\sqrt{2} > 0$, $1 > 0$, $(\sqrt{2})^2 - 1^2 = 2 - 1 > 0$ and
+        $(\sqrt{2})^2 - 2^2 = 2 - 4 < 0$. From here, $0 < \sqrt{2} - 1 < 1$, and
+        $0 < (\sqrt{2} - 1)q < q$.
+        Hence, $(\sqrt{2} - 1)q$ must be a nonnegative
+        integer. We find a positive integer $q'$ such that $0 < q' < q$ and
+        we can still find a nonnegative integer, contradicting the original
+        assumption of $q$ being the smallest positive integer possible.
+        We see that this is the case with $q' ::= (\sqrt{2} - 1)q$.
+        \item I prefer this proof because,
+        \begin{itemize}
+            \item There are less computations.
+            \item Relying only on basic assumptions about numbers.
+            \item More abstractions lead to general results and
+            proof methods.
+            \item Optimization method.
+        \end{itemize}
+    \end{enumerate}
+\end{pr}
+
+\begin{pr}\leavevmode
+    \begin{enumerate}[label=\textbf{(\alph*)}]
+        \item Let $Q(n)$ be the polynomial without the constant term $c \in \mathbb{N}$.
+        By definition, $q(n) = Q(n) + q(0)$ and $Q(n)=nQ'(n)$.
+        Then for all $m \in \mathbb{Z}$,
+        \begin{IEEEeqnarray*}{rCl}
+            q(cm) & = & Q(cm) + q(0) \\
+                  & = & cQ'(m) + c \\
+                  & = & c[Q'(m) + 1]
+        \end{IEEEeqnarray*}
+        Therefore, $q(cm)$ is a multiple of $c$.
+        \item Assume $c > 1$. Since $n=cm$, as $n \to \infty$, $m \to \infty$
+        and there will be an infinite many $q(n) \in \mathbb{Z}$ that are not
+        primes since they all are multiples of $c$.
+        \item It is sufficient to consider the case $0 \leq c \leq 1$.
+        Then observe that $q(0) = c$, which is not a prime.
+
+        We conclude that for every nonconstant polynomial $q$ there must
+        be an $n \in \mathbb{N}$ such that $q(n)$ is not prime.
+    \end{enumerate}
 \end{pr}
