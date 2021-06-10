@@ -514,7 +514,7 @@ So we state it here for convenience.
         which implies that $k = x_0^m$. Therefore, $\sqrt[m]{k}$ is irrational
         whenever $k \neq x_0^m$ for some integer $x_0$.
         \item We shall first prove a lemma,
-        \begin{lemPr}
+        \begin{lemPr} \label{1.19.2:sec1.8:ch1}
             If a prime $p$ is a factor of some power of an integer, then it is also
             a factor of that integer.
         \end{lemPr}
@@ -541,4 +541,67 @@ So we state it here for convenience.
         $x_0$ is irrational. We conclude that any real root of the polynomial is
         either integer or irrational.
     \end{enumerate}
+\end{pr}
+
+\begin{pr}\leavevmode
+    \\
+    Let $x = \log_9 12$. We shall prove that $x$ is irrational by contradiction.
+    Assume that $x = \dfrac{p}{q}$ in the lowest term possible for some integer $p,q$. Then,
+    \begin{equation*}
+        3^{\left(2\frac{p}{q}\right)} = (2^2 \cdot 3)
+    \end{equation*}
+    Powering both sides to $q$, we have,
+    \begin{equation*}
+        3^{2p} = (2^{2q} \cdot 3^q)
+    \end{equation*}
+    Dividing both sides by $3^q$, yielding,
+    \begin{equation*}
+        3^{2p - q} = 2^q
+    \end{equation*}
+    By unique prime factorization lemma, the last equation is impossible unless
+    both powers on both sides equal to $0$, but this implies that $p = q = 0$. Therefore,
+    $x$ must be irrational.
+\end{pr}
+
+\begin{pr}\leavevmode
+    \\
+    Let $x = \log_{12} 18$. We shall prove that $x$ is irrational by contradiction.
+    Assume that $x = \dfrac{p}{q}$ in the lowest term possible for some integer $p,q$.
+    Then,
+    \begin{equation*}
+        (2^2 \cdot 3)^{\frac{p}{q}} = (3^2 \cdot 2)
+    \end{equation*}
+    Powering both sides to $q$,
+    \begin{equation*}
+        (2^2 \cdot 3)^p = (2 \cdot 3^2)^q
+    \end{equation*}
+    Equivalently,
+    \begin{equation*}
+        2^{2p} \cdot 3^p = 2^q \cdot 3^{2q}
+    \end{equation*}
+    Finally, dividing both sides by $2^q3^p$ yields,
+    \begin{equation*}
+        2^{2p - q} = 3^{2q - p}
+    \end{equation*}
+    By unique prime factorization lemma, this is impossible unless $p = q = 0$, but
+    this contradicts $x$ is rational. We conclude that $x$ is irrational.
+\end{pr}
+
+\begin{pr}\leavevmode
+    \\
+    The unsatisfiable equation is $a^3 = 7^2b^3$. Assume $\sqrt[3]{7^2} = \dfrac{a}{b}$
+    for some integer $a,b$ in the lowest term possible. By lemma \ref{1.19.2:sec1.8:ch1},
+    since $7$ is a factor of $a^3$, $7$ is also a factor of $a$, but this means
+    that $7$ is also a factor $b^3$ and, by implication, $b$. This contradicts that
+    $a$ and $b$ are in the lowest term possible. Hence, the equation is not satisfied.
+\end{pr}
+
+\begin{pr}\leavevmode
+    \\
+    From the problems above, it is easy to show that $2\log_2 3$ is irrational.
+\end{pr}
+
+\begin{pr}\leavevmode
+    \\
+    MIT sucks
 \end{pr}
