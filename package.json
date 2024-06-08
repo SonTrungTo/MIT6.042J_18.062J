@@ -1,0 +1,27 @@
+{
+  "name": "general-math-cs",
+  "version": "1.0.0",
+  "description": "Review of basic math for CS",
+  "main": "src/index.ts",
+  "scripts": {
+    "ts": "tsc init",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SonTrungTo/MIT6.042J_18.062J.git"
+  },
+  "keywords": [
+    "cs",
+    "math"
+  ],
+  "author": "Son To",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SonTrungTo/MIT6.042J_18.062J/issues"
+  },
+  "homepage": "https://github.com/SonTrungTo/MIT6.042J_18.062J#readme",
+  "devDependencies": {
+    "typescript": "^5.4.5"
+  }
+}
