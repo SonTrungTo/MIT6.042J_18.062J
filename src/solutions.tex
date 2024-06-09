@@ -8,7 +8,7 @@ citecolor=red,anchorcolor=red]{hyperref}
 \pgfplotsset{width=7cm,compat=1.9}
 \usepackage[retainorgcmds]{IEEEtrantools}
 \newcommand{\boldText}[1]{\textbf{#1}}
-\newcommand{\fileVer}{v1.2}
+\newcommand{\fileVer}{\input{build.tex}}
 \newcommand{\note}[1]{\emph{#1}}
 \theoremstyle{plain} \newtheorem{lemNotes}{Lemma}[chapter]
                      \newtheorem{thm}{Theorem}[section]
@@ -57,7 +57,7 @@ citecolor=red,anchorcolor=red]{hyperref}
 
 \begin{document}
     
-    \title{Problems In Mathematics for Computer Science, \fileVer}
+    \title{Problems In Mathematics for Computer Science}
     \author{Son To\\
     $<$\href{mailto:son.trung.to@gmail.com}%
     {son.trung.to@gmail.com}$>$}
@@ -67,6 +67,9 @@ citecolor=red,anchorcolor=red]{hyperref}
     \maketitle
     \makeatletter
     \thispagestyle{empty}
+    \begin{center}
+        v\fileVer
+    \end{center}
     \def\cleardoublepage{\clearpage\if@twoside
         \ifodd\c@page\else
             \hbox{}
