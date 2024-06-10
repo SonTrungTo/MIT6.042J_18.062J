@@ -7,4 +7,10 @@ jobs:
     test:
         runs-on: ubuntu-latest
         steps:
-            - run: echo "Testing github actions"
+            - name: Checkout
+              uses: actions/checkout@v4
+              with:
+                fetch-depth: 0
+            - name: Verify the working repository
+              run: echo $GITHUB_WORKSPACE
+
