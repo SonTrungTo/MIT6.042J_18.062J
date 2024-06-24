@@ -14,7 +14,8 @@ jobs:
             - name: Install node 20
               uses: actions/setup-node@v4
               with:
-                node-version: lts/20
+                node-version: "20"
+                check-latest: false
             - name: Verify the working repository
               run: echo $GITHUB_WORKSPACE
             - name: Check all files within the directory
