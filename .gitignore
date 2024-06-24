@@ -1,5 +1,6 @@
 dist
 node_modules
+.npmrc
 *.aux
 *.blg
 *.fdb_latexmk
