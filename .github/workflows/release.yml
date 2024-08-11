@@ -19,5 +19,3 @@ jobs:
               run: echo $GITHUB_WORKSPACE
             - name: Check all files within the directory
               run: ls -a
-
-
