@@ -15,6 +15,8 @@ jobs:
               uses: actions/setup-node@v4
               with:
                 node-version: "20.10.0"
+            - name: Checking node and npm version
+              run: node -v && npm -v
             - name: Verify the working repository
               run: echo $GITHUB_WORKSPACE
             - name: Check all files within the directory
