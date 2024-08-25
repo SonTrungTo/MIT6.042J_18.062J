@@ -1,5 +1,7 @@
 // This file is to automatically update new version for
 // the document. Please do not manually adjust the file
-import fs from "fs/promises";
+const fs = require("fs/promises");
+const packageJSON = require("../package.json");
 
 const APP_VERSION = "";
+console.log("package version", packageJSON.version);
