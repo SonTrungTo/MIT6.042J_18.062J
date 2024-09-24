@@ -3,5 +3,7 @@
 const fs = require("fs/promises");
 const packageJSON = require("../package.json");
 
-const APP_VERSION = "";
-console.log("package version", packageJSON.version);
+const APP_VERSION = packageJSON.version;
+(async () => {
+    await fs.writeFile("./src/build.tex", APP_VERSION);
+})();

@@ -1,12 +1,12 @@
 {
   "name": "general-math-cs",
-  "version": "1.0.0",
+  "version": "0.2",
   "description": "Review of basic math for CS",
   "main": "./dist/index.js",
   "type": "module",
   "scripts": {
     "build": "tsc --build",
-    "set-build": "node scripts/version.cjs",
+    "set-build": "cp src/solutions.pdf build/solutions.pdf && node scripts/version.cjs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -27,5 +27,6 @@
     "@types/node": "^20.14.2",
     "semantic-release": "^24.0.0",
     "typescript": "^5.4.5"
-  }
+  },
+  "files": ["build/solutions.pdf"]
 }
