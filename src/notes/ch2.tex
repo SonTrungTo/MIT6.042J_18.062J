@@ -1,13 +1,32 @@
-\chapter{The Well Ordering Principle}
+\chapter{The Well Ordering Principle (WOP)}
 
 \begin{center}
     \emph{Every nonempty set of nonnegative integers has a smallest element.}
 \end{center}
 
 \begin{claim}
-    $\sqrt{2}$ is irrational implies the well ordering principle.
+    $\sqrt{2}$ is irrational implies the well ordering principle has been assumed.
 \end{claim}
 
 \begin{proof}
-    the proof is by assuming contradiction.
+    Assume by contradiction that $\sqrt{2} = \dfrac{m}{n}$ where it cannot be rewritten
+    in the lowest common denominator. Let $\ms{C}$ be the set of all numerators of such fractions.
+    By assumption, $\ms{C}$ is non-empty as $m \in \ms{C}$. By WOP, there exists a smallest element
+    $m_{0}$. By definition of $\ms{C}$, there exists $n_{0} > 0, n \in \ms{Z}$ such that
+    \begin{equation*}
+        \dfrac{m_0}{n_0} \in \ms{C}
+    \end{equation*}
+    By definition of $\ms{C}$, there must be an integer $k > 1$ such that
+    \begin{equation*}
+        \dfrac{\dfrac{m_0}{k}}{\dfrac{n_0}{k}} = \dfrac{m_0}{n_0}
+    \end{equation*}
+    Therefore, $\dfrac{m_0}{k} \in \ms{C}$. But then $\dfrac{m_0}{k} < m_0$, contradicting
+    that $m_0$ is the smallest element in $\ms{C}$. Therefore, $\ms{C} = \emptyset$, meaning
+    there is no fractions that cannot be written in the lowest common denominator.
 \end{proof}
+
+\begin{claim}
+    \begin{equation}
+        \sum_{1}^{n} i = n(n+1)/2
+    \end{equation}
+\end{claim}
