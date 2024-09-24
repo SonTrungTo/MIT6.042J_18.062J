@@ -23,3 +23,19 @@ jobs:
               run: echo $GITHUB_WORKSPACE
             - name: Check all files within the directory
               run: ls -a
+
+    audit:
+        runs-on: ubuntu-24.04
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v4
+              with:
+                fetch-depth: 0
+            - name: Install node 20.10.0
+              uses: actions/setup-node@v4
+              with:
+                node-version: "20.10.0"
+            - name: Check node and npm version
+              run: node -v && npm -v
+            - name: Check package vulnerabilities
+              run: npm audit
