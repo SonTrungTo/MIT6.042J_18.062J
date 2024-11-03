@@ -26,11 +26,27 @@
 \end{proof}
 
 \begin{claim}
-    \begin{equation}
+    \begin{equation} \label{eq:2.1}
         \sum_{1}^{n} i = n(n+1)/2
     \end{equation}
 \end{claim}
 
 \begin{proof}
-    The proof is by contradiction.
+    The proof is by contradiction. Suppose that there is a set of $\ms{C}$ such that,
+    \begin{equation*}
+        \ms{C} = \left\{ n \in \ms{N} \ \left| \ \sum_{1}^{n} i \neq n(n + 1)/2 \right. \right\}
+    \end{equation*}
+    By assumption, $\ms{C}$ is a non-empty set of non-negative integers. By WOP, there is the smallest
+    element $n_0 \in \ms{C}$ such that \ref{eq:2.1} is satisfied when $n < n_0$. Since \ref{eq:2.1} is true
+    when $n = 0$, it follows that $n_0 > 0$. Therefore, the equation \ref{eq:2.1} must hold true for all
+    $0 < n_0 - 1 < n_0$; this means that,
+    \begin{equation*}
+        1 + 2 + \ldots + n_0 - 1 = \dfrac{(n_0 - 1)n_0}{2}
+    \end{equation*}
+    Adding $n_0$ to both sides,
+    \begin{equation*}
+        1 + 2 + \ldots + (n_0 - 1) + n_0 = \dfrac{n_0(n_0 + 1)}{2}
+    \end{equation*}
+    Therefore, the equation \ref{eq:2.1} holds true for $n_0$, but this contradicts
+    that ${n_0 \in \ms{C}}$.
 \end{proof}
