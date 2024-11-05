@@ -61,5 +61,14 @@ than one has a unique expression as a product of prime numbers.
 \end{claim}
 
 \begin{proof}
-    Proof by WOP.
+    Let $\ms{C}$ be the set of all positive integers greater than one
+    that cannot be factored as a product of primes. Suppose by contradiction
+    that $\ms{C} \neq \emptyset$. By WOP, there exists a smallest $c_0 \in \ms{C}$ such that $c_0 = c_1 \times c_2$ where
+    $c_1$ and $c_2$ are nonnegative and non-prime integers. Since $c_1, c_2 \notin \ms{C}$,
+    they are factored as a product of primes,
+    \begin{equation*}
+        c_1 \times c_2 = p_{11}p_{21}\ldots\ p_{k1}p_{12}p_{22}\ldots\ p_{j2}
+    \end{equation*}
+    for some postive integers $k, j$. However, this implies that $c_0$ can be factored
+    into a product of primes, contradicting that $c_0 \in \ms{C}$.
 \end{proof}
