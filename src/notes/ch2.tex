@@ -110,7 +110,7 @@ than one has a unique expression as a product of prime numbers.
 
 Well ordered sets' definition lead to two corollaries,
 
-\begin{cor}
+\begin{cor} \label{corollary2.0.1:ch2}
     Any set of integers with a lower bound is well ordered.
 \end{cor}
 
@@ -123,3 +123,10 @@ Well ordered sets' definition lead to two corollaries,
 \begin{cor}
     Any nonempty set of integers with an upper bound has a maximal element.
 \end{cor}
+
+\begin{proof} \label{corollary2.0.2:ch2}
+    Let $\ms{B}$ be an arbitrary nonempty set of integers with an upper
+    bound $\lceil b \rceil$. Then $-\ms{B}$ must have a lower bound $-\lceil b \rceil$.
+    By the above Corollary \ref{corollary2.0.1:ch2}, $-\ms{B}$ is well ordered and has
+    a minimal element. Hence $\ms{B}$ has a maximal element.
+\end{proof}
