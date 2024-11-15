@@ -9,5 +9,5 @@ Progress: 2/22 = 0.09 ~= 9%
 - Chapter 2: Well ordering Principle
 
 References:
-- [2005](https://ocw.mit.edu/courses/6-042j-mathematics-for-computer-science-fall-2005/pages/assignments/){:target="_blank" rel="noopener"}
-- [2010](https://ocw.mit.edu/courses/6-042j-mathematics-for-computer-science-fall-2010/pages/assignments/){:target="_blank" rel="noopener"}
+- <a href="https://ocw.mit.edu/courses/6-042j-mathematics-for-computer-science-fall-2005/pages/assignments/" target="_blank">2005</a>
+- <a href="https://ocw.mit.edu/courses/6-042j-mathematics-for-computer-science-fall-2010/pages/assignments/" target="_blank">2010</a>
