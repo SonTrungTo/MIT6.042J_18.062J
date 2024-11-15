@@ -8,3 +8,6 @@ Progress: 2/22 = 0.09 ~= 9%
 - Chapter 1: Proof
 - Chapter 2: Well ordering Principle
 
+References:
+- [2005](https://ocw.mit.edu/courses/6-042j-mathematics-for-computer-science-fall-2005/pages/assignments/)
+- [2010](https://ocw.mit.edu/courses/6-042j-mathematics-for-computer-science-fall-2010/pages/assignments/)
