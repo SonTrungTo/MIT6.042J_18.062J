@@ -6,7 +6,7 @@ the course [MIT6.042J/18.062J](https://ocw.mit.edu/courses/electrical-engineerin
 Progress: 2/22 = 0.09 ~= 9%
 
 - Chapter 1: Proof
-- Chapter 2: Well ordering Principle (theory finished)
+- Chapter 2: Well ordering Principle (theory finished, problem starts)
 
 References:
 - [2005](https://ocw.mit.edu/courses/6-042j-mathematics-for-computer-science-fall-2005/pages/assignments/)
