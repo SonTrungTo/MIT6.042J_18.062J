@@ -25,6 +25,7 @@
   "homepage": "https://github.com/SonTrungTo/MIT6.042J_18.062J#readme",
   "devDependencies": {
     "@types/node": "^20.14.2",
+    "cross-spawn": "^7.0.6",
     "micromatch": "^4.0.8",
     "semantic-release": "^24.0.0",
     "typescript": "^5.4.5"
