@@ -143,18 +143,20 @@ Finite sets are yet another routine example of well ordered sets.
 
 \begin{proof}
     If a nonempty set of real numbers is finite, its number of subsets is also finite.
-    Therefore it is sufficient to prove that every finite set of real numbers has a minimum element.
+    Therefore it is sufficient to prove that every such finite set of real numbers has a minimal element.
 
     We shall prove by contradiction using WOP on the \note{size} of finite sets.
 
-    % need to fix
-    Suppose we have a set $\ms{C}$ of $n$ positive integers where $n$ finite
-    sets of real numbers that have no minimum element. For the sake of our argument,
+    Suppose we have a set $\ms{C}$ of $n$ positive integers where finite
+    sets of size $n$ real numbers have no minimal element. For the sake of our argument,
     $\ms{C} \neq \emptyset$. By WOP, $\ms{C}$ has a minimal element $n_0$. We argue
     that $n_0 > 1$ since a set of real numbers with one single element has
     minimal element as the one element itself.
 
     Now let $\ms{S}$ be a finite set of real numbers which satisfies
-    $\ms{C}$. Then $\ms{S}$ must have at least $2$ elements. Let $r_1 \in \ms{S}$.
-    By assumption, $\ms{S}$ has no minimal elements.
+    $\ms{C}$. Then $\ms{S}$ must have at least $n_0$ elements. Let $r_1 \in \ms{S}$.
+    By assumption, $\ms{S}$ has no minimal elements. Removing $r_1$ from $\ms{S}$
+    means that the set now has a minimal element $r_0$ since the set is finite.
+    But then this means that $\min(r_0, r_1)$ is the minimal element of $\ms{S}$,
+    contradicting that $\ms{S}$ has no minimal element.
 \end{proof}
