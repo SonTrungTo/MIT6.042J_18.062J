@@ -171,5 +171,15 @@ numerator.
 \end{lemNotes}
 
 \begin{proof}
-    WOP?
+    Let $\ms{S}$ be any nonempty subset of $\ms{N} + \ms{F}$.
+
+    Let $\ms{S}_n = \left\{n \in \ms{N} \ \left| \  (n + f) \in \ms{S} \ \text{for some} \ f \in \ms{F} \right. \right\}$.
+    By definition of $\ms{S}$, $\ms{S}_n$ is nonempty. By WOP, there exists a minimal $n_0 \in \ms{S}_n$.
+
+    Then by definition of $\ms{S}_n$, $\ms{S}_f = \left\{f \in \ms{F} \ \left| \  (n_0 + f) \in \ms{S} \right. \right\}$ is nonempty.
+    By WOP, there exists a minimal $f_0 \in \ms{S}_f$.
+
+    We argue that $n_0 + f_0$ is the smallest element in $\ms{S}$.
+    For any arbitrary $(n + f) \in \ms{S}$, $n + f \geq n_0 + f \geq n_0 + f_0$
+    where $n_0 + f_0 \in \ms{S}$. Therefore, $\ms{N} + \ms{F}$ is well ordered.
 \end{proof}
