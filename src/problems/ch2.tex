@@ -6,4 +6,20 @@
         Every amount of postage that can be assembled using only $10$ cent
         and $15$ cent stamps is divisible by $5$.
     \end{lemPr}
+
+    \begin{proof}
+        Let the notation "$j\left|\right.k$" indicate the integer $j$
+        is a divisor of integer $k$, and let $S(n)$ mean that exactly $n$ cents
+        postage can be assembled using only $10$ and $15$ cent stamps. Then
+        the proof shows that
+        \begin{equation} \label{statement:pr1}
+            S(n) \quad \text{IMPLIES} \quad 5 \left|\right. n, \qquad \text{for all nonnegative integers n.}
+        \end{equation}
+        Let $C$ be the set of \note{counterexamples} to (\ref{statement:pr1}), namely
+        \begin{equation*}
+            C ::= \left\{ n \left|\right. S(n) \ \text{DOES NOT IMPLY} \ 5 \left|\right. n \ \text{for some} \ n \in S(n) \right\}
+        \end{equation*}
+        Assume for the purpose of obtaining a contradiction that $C \neq \emptyset$.
+        WOP?
+    \end{proof}
 \end{pr}
