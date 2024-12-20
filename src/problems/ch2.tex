@@ -20,6 +20,21 @@
             C ::= \left\{ n \left|\right. S(n) \ \text{DOES NOT IMPLY} \ 5 \left|\right. n \ \text{for some} \ n \in S(n) \right\}
         \end{equation*}
         Assume for the purpose of obtaining a contradiction that $C \neq \emptyset$.
-        WOP?
+        By WOP, there exists a smallest $m \in C$. This $m$ must be positive
+        because $5 \left|\right. 0$.
+        \beautyBr
+        But if $S(m)$ holds and $m$ is positive, then $S(m - 10)$ or $S(m - 15)$
+        must hold, because for all positive $m = 10i + 15j$ for either $i > 0$ or $j > 0$; if
+        $i > 0$, $(m - 10) \in S(m - 10)$; if $j > 0$, $(m - 15) \in S(m - 15)$.
+        \beautyBr
+        So suppose $S(m - 10)$ holds. Then $5 \left|\right. m - 10$, because $(m - 10) \notin C$.
+        \beautyBr
+        But this means that $5 \left|\right. m$, contradicting the fact that
+        $m$ is a counterexample.
+        \beautyBr
+        Next, if $S(m - 15)$ holds, we arrive at a contradiction the same way.
+        \beautyBr
+        Since we get a contradiction in both cases, we conclude that $C = \emptyset$,
+        which proves that $(\ref{statement:pr1})$ holds.
     \end{proof}
 \end{pr}
