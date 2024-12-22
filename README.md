@@ -8,7 +8,7 @@ Progress: 2/22 = 0.09 ~= 9%
 - Chapter 1: Proof
 - Chapter 2: Well ordering Principle (theory finished, problem starts)
     - [x] 2.1
-    - 2.2
+    - [x] 2.2
     - 2.3
 
 References:
