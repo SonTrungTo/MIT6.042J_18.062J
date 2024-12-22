@@ -9,7 +9,7 @@ Progress: 2/22 = 0.09 ~= 9%
 - Chapter 2: Well ordering Principle (theory finished, problem starts)
     - [x] 2.1
     - [x] 2.2
-    - 2.3
+    - [x] 2.3
 
 References:
 - [2005](https://ocw.mit.edu/courses/6-042j-mathematics-for-computer-science-fall-2005/pages/assignments/)
