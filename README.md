@@ -10,6 +10,9 @@ Progress: 2/22 = 0.09 ~= 9%
     - [x] 2.1
     - [x] 2.2
     - [x] 2.3
+    - 2.4
+    - 2.5
+    
 
 References:
 - [2005](https://ocw.mit.edu/courses/6-042j-mathematics-for-computer-science-fall-2005/pages/assignments/)
