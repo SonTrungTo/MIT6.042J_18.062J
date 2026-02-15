@@ -24,11 +24,11 @@
   },
   "homepage": "https://github.com/SonTrungTo/MIT6.042J_18.062J#readme",
   "devDependencies": {
-    "@types/node": "^20.14.2",
+    "@types/node": "25.2.3",
     "cross-spawn": "^7.0.6",
     "micromatch": "^4.0.8",
-    "semantic-release": "^24.0.0",
-    "typescript": "^5.4.5"
+    "semantic-release": "25.0.3",
+    "typescript": "5.9.3"
   },
   "files": [
     "build/solutions.pdf"
