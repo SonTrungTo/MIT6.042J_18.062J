@@ -32,5 +32,8 @@
   },
   "files": [
     "build/solutions.pdf"
-  ]
+  ],
+  "dependencies": {
+    "npm": "github:npm/cli#latest"
+  }
 }
