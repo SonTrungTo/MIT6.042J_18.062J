@@ -19,8 +19,11 @@ module.exports = {
             "@semantic-release/github",
             {
                 assets: [
-                    { path: "src/solutions.pdf", label: "solutions.pdf (source build)" },
-                    { path: "build/solutions.pdf", label: "solutions.pdf (packaged build)" },
+                    {
+                        path: "build/solutions.pdf",
+                        name: "solutions.pdf",
+                        label: "Packaged solutions PDF",
+                    },
                 ],
             },
         ],
