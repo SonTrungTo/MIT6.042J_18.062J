@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/SonTrungTo/MIT6.042J_18.062J/compare/v1.0.0...v1.0.1) (2026-02-22)
+
+
+### Bug Fixes
+
+* fix release github pipeline ([1da3a0d](https://github.com/SonTrungTo/MIT6.042J_18.062J/commit/1da3a0d9190ad57b42e8446092ede42bb7db56f3))
+
 # 1.0.0 (2026-02-22)
 
 
