@@ -1,3 +1,12 @@
+## [1.0.2](https://github.com/SonTrungTo/MIT6.042J_18.062J/compare/v1.0.1...v1.0.2) (2026-02-22)
+
+
+### Bug Fixes
+
+* fix versioning ([379e13a](https://github.com/SonTrungTo/MIT6.042J_18.062J/commit/379e13a3560312bf5682575ac3690c21fb05b8a0))
+* install all latex tools during release ([b910c74](https://github.com/SonTrungTo/MIT6.042J_18.062J/commit/b910c7403420dd2dc813a500dd41f48f74e2bd21))
+* install latexmk phase ([36cd7e4](https://github.com/SonTrungTo/MIT6.042J_18.062J/commit/36cd7e4192d2b431ba7271568c8d25dbf4d04c7b))
+
 ## [1.0.1](https://github.com/SonTrungTo/MIT6.042J_18.062J/compare/v1.0.0...v1.0.1) (2026-02-22)
 
 
