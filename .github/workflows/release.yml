@@ -1,8 +1,11 @@
 name: "release"
 on:
-    push:
-        branches:
-            - master
+  push:
+    branches:
+      - "**"
+  pull_request:
+    branches:
+      - "**"
 jobs:
     build:
         runs-on: ubuntu-24.04
@@ -43,6 +46,7 @@ jobs:
 
     release:
         needs: build
+        if: github.event_name == 'push' && github.ref == 'refs/heads/master'
         runs-on: ubuntu-24.04
         steps:
             - name: Checkout
