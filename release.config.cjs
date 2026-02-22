@@ -6,7 +6,7 @@ module.exports = {
         "@semantic-release/release-notes-generator",
         "@semantic-release/changelog",
         ["@semantic-release/npm", { npmPublish: false }],
-        ["@semantic-release/exec", { prepareCmd: "node scripts/version.cjs" }],
+        ["@semantic-release/exec", { prepareCmd: "npm run -s set-build" }],
         [
             "@semantic-release/git",
             {
