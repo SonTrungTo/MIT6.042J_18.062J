@@ -1,9 +1,12 @@
-// This file is to automatically update new version for
-// the document. Please do not manually adjust the file
+// This file automatically syncs the document version (src/build.tex)
+// from package.json. Please do not manually adjust src/build.tex.
 const fs = require("fs/promises");
-const packageJSON = require("../package.json");
+const path = require("path");
 
-const APP_VERSION = packageJSON.version;
+const packageJSON = require(path.join(__dirname, "..", "package.json"));
+const appVersion = packageJSON.version;
+
 (async () => {
-    await fs.writeFile("./src/build.tex", APP_VERSION);
+    const buildTexPath = path.join(__dirname, "..", "src", "build.tex");
+    await fs.writeFile(buildTexPath, `${appVersion}\n`, "utf8");
 })();

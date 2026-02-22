@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "build": "tsc --build",
-    "set-build": "cp src/solutions.pdf build/solutions.pdf && node scripts/version.cjs",
+    "set-build": "node scripts/version.cjs && rm -f src/solutions.fdb_latexmk src/solutions.fls && (cd src && latexmk -pdf -interaction=nonstopmode -halt-on-error solutions.tex) && mkdir -p build && cp src/solutions.pdf build/solutions.pdf",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -27,6 +27,9 @@
     "@types/node": "25.2.3",
     "cross-spawn": "^7.0.6",
     "micromatch": "^4.0.8",
+    "@semantic-release/exec": "^7.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/npm": "^13.1.1",
     "semantic-release": "25.0.3",
     "typescript": "5.9.3"
   },
