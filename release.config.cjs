@@ -4,12 +4,13 @@ module.exports = {
     plugins: [
         "@semantic-release/commit-analyzer",
         "@semantic-release/release-notes-generator",
+        "@semantic-release/changelog",
         ["@semantic-release/npm", { npmPublish: false }],
-        ["@semantic-release/exec", { prepareCmd: "npm run -s set-build" }],
+        ["@semantic-release/exec", { prepareCmd: "node scripts/version.cjs" }],
         [
             "@semantic-release/git",
             {
-                assets: ["package.json", "package-lock.json", "src/build.tex"],
+                assets: ["package.json", "package-lock.json", "src/build.tex", "CHANGELOG.md"],
                 message:
                     "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}",
             },

@@ -30,6 +30,45 @@ jobs:
               run: npm ci
             - name: Build PDF + sync version
               run: npm run -s set-build
+
+            - name: Upload build artifacts
+              uses: actions/upload-artifact@v4
+              with:
+                name: build-artifacts
+                if-no-files-found: error
+                path: |
+                  src/solutions.pdf
+                  src/build.tex
+                  build/solutions.pdf
+
+    release:
+        needs: build
+        runs-on: ubuntu-24.04
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v4
+              with:
+                fetch-depth: 0
+
+            - name: Download build artifacts
+              uses: actions/download-artifact@v4
+              with:
+                name: build-artifacts
+                path: artifacts
+
+            - name: Restore build outputs
+              run: |
+                mkdir -p build src
+                cp -f artifacts/src/solutions.pdf src/solutions.pdf
+                cp -f artifacts/src/build.tex src/build.tex
+                cp -f artifacts/build/solutions.pdf build/solutions.pdf
+            - name: Install Node
+              uses: actions/setup-node@v4
+              with:
+                node-version: "20"
+                cache: "npm"
+            - name: Install dependencies
+              run: npm ci
             - name: Run semantic-release
               env:
                 GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
