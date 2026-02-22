@@ -69,8 +69,16 @@ jobs:
                 cache: "npm"
             - name: Install dependencies
               run: npm ci
-            - name: Install latexmk
-              run: sudo apt-get install -y --no-install-recommends latexmk
+            - name: Install LaTeX tooling
+              run: |
+                sudo apt-get update
+                sudo apt-get install -y --no-install-recommends \
+                  latexmk \
+                  texlive-latex-extra \
+                  texlive-publishers \
+                  texlive-pictures \
+                  texlive-bibtex-extra \
+                  texlive-fonts-recommended
             - name: Run semantic-release
               env:
                 GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
