@@ -63,4 +63,14 @@
     \begin{equation*}
         \sum_{k=0}^{c_0-1} k^2 = \dfrac{c_0(c_0-1)(2c_0-1)}{6}
     \end{equation*}
+    Adding $c_0^2$ to both sides, we get
+    \begin{align*}
+        \sum_{k=0}^{c_0} k^2 &= \dfrac{c_0(c_0-1)(2c_0-1)}{6} + c_0^2 \\
+        &= \dfrac{c_0(c_0-1)(2c_0-1) + 6c_0^2}{6} \\
+        &= \dfrac{c_0\left[(c_0-1)(2c_0-1) + 6c_0\right]}{6} \\
+        &= \dfrac{c_0\left[2c_0^2 + 3c_0 + 1\right]}{6} \\
+        &= \dfrac{c_0\left[2c_0(c_0 + 1) + (c_0 + 1)\right]}{6} \\
+        &= \dfrac{c_0(c_0 + 1)(2c_0 + 1)}{6}
+    \end{align*}
+    which contradicts the fact that $c_0 \in \ms{C}$.
 \end{pr}
