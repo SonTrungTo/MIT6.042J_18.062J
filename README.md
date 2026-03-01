@@ -11,7 +11,8 @@ Progress: 2/22 = 0.09 ~= 9%
     - [x] 2.2
     - [x] 2.3
     - [x] 2.4
-    - 2.5 starting...
+    - [x] 2.5
+    - 2.6 starting...
     
 
 References:
