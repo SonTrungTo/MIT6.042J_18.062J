@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/SonTrungTo/MIT6.042J_18.062J/compare/v1.0.3...v1.0.4) (2026-03-01)
+
+
+### Bug Fixes
+
+* resolve problem 2.5  ([34faf2b](https://github.com/SonTrungTo/MIT6.042J_18.062J/commit/34faf2b48d0cd91d36e3d669538b7a46a1da7edd))
+
 ## [1.0.3](https://github.com/SonTrungTo/MIT6.042J_18.062J/compare/v1.0.2...v1.0.3) (2026-02-22)
 
 
