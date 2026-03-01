@@ -28,6 +28,15 @@ citecolor=red,anchorcolor=red]{hyperref}
 \newcommand{\abautorefname}{Remark}
 \newcommand{\thmautorefname}{Theorem}
 \newcommand{\prautorefname}{Problem}
+\newenvironment{propertym}%
+{%
+    \begin{center}%
+    \begin{minipage}{0.85\linewidth}\raggedright%
+}%
+{%
+    \end{minipage}%
+    \end{center}%
+}
 \newenvironment{sloppypar*}{\sloppy\ignorespaces}{\par}
 \newenvironment{solution}%
 {\renewcommand{\qedsymbol}{$\blacksquare$}%
